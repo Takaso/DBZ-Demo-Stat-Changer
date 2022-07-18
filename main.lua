@@ -31,7 +31,7 @@ end
 
 -- Strenght, MaxHealth, KiPower, KiMax, StaminaMax, Speed
 
-notify("DBZ Demo Stat Script", "Made by Takaso,\nR : Atk - Z : ATK-HP - X : HP\nV : KI - N : KI-HP", 5);
+notify("DBZ Demo Stat Script - By Takaso", "R : Atk - Z : ATK-HP - X : HP\nV : KI,\n N : KI-HP - C : KiMax", 5);
 
 
 key.InputBegan:Connect(function(input)
@@ -60,5 +60,6 @@ key.InputBegan:Connect(function(input)
     elseif input.KeyCode == Enum.KeyCode.C then
         Reset();
         StatPoint("KiMax", 7, 100);
+        notify("DBZ Demo Stat Script", "Updated KiMax");
     end
 end)
