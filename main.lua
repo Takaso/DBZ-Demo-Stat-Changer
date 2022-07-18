@@ -57,5 +57,8 @@ key.InputBegan:Connect(function(input)
         StatPoint("KiPower", 3, 100);
         StatPoint("MaxHealth", 4, 100);
         notify("DBZ Demo Stat Script", "Updated KI-HP");
+    elseif input.KeyCode == Enum.KeyCode.C then
+        Reset();
+        StatPoint("KiMax", 7, 100);
     end
 end)
